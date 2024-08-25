@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Music Recommendation System</title>
+</head>
+<body>
+    <h1>Recommendations for {{ music_title }}</h1>
+    {%if recommendations %}
+        <ul>
+            {%for rec in recommendations %}
+                <li>{{rec}}</li>
+            {%endfor %}
+        </ul>
+    {%else %}
+        <p>Music not found</p>
+    {%endif %}
+</body>
+</html>
